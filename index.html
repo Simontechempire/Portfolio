@@ -11,9 +11,12 @@
 <meta property="og:image" content="https://files.catbox.moe/4h6zq0.jpg">
 <link rel="icon" href="https://files.catbox.moe/4h6zq0.jpg">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Poppins:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Poppins:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&family=Bebas+Neue&family=Permanent+Marker&family=Monoton&family=Rubik+Glitch&family=Pacifico&family=Black+Ops+One&family=Creepster&family=Bungee&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<!-- RAP MUSIC AUTO-PLAY - UNIMAGINABLE EDIT -->
+<audio id="bgMusic" loop autoplay><source src="https://www.bensound.com/bensound-music/bensound-hiphop.mp3" type="audio/mpeg"></audio>
 
 <!-- VIDEO BACKGROUND -->
 <video autoplay muted loop playsinline id="bg-video">
@@ -45,7 +48,7 @@
       <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#testimonials">Reviews</a><a href="#blog">Blog</a><a href="#faq">FAQ</a><a href="#contact" class="nav-btn">Contact</a>
     </div>
     <div class="nav-actions">
-      <button id="musicBtn" title="Music">🎵</button>
+      <button id="musicBtn" title="Music">⏸️</button>
       <button id="themeBtn" title="Change Theme">🌙</button>
     </div>
   </nav>
@@ -61,6 +64,22 @@
     <div class="badge"><span class="dot"></span> AVAILABLE FOR PROJECTS • ONLINE NOW • <span id="liveClock">00:00:00</span> • WARRI, NIGERIA 🇳🇬</div>
     <h1>FACELESS <span>TECH</span></h1>
     <p class="hero-name">Simon • Oghene | Nigeria, Delta State - Warri | Christian ✝️ | Single</p>
+
+    <!-- 10 NEW FUN LOGS - NO ONE HAS THIS -->
+    <div class="fun-logs">
+      <span class="fun-log-1">MIC DROP 🎤</span>
+      <span class="fun-log-2">Boss Mode</span>
+      <span class="fun-log-3">GLITCH</span>
+      <span class="fun-log-4">FIRE 🔥</span>
+      <span class="fun-log-5">TOP G</span>
+      <span class="fun-log-6">NO SLEEP</span>
+      <span class="fun-log-7">100% Real</span>
+      <span class="fun-log-8">LEGEND</span>
+      <span class="fun-log-9">HUSTLE 💎</span>
+      <span class="fun-log-10">UNSTOPPABLE 🚀</span>
+    </div>
+    <div class="music-wave"><span></span><span></span><span></span><span></span><span></span></div>
+
     <h2 class="typing">I build <span id="typeText"></span><span class="cursor">|</span></h2>
     <p class="hero-desc">I started from <b>ZERO</b>. AI was my teacher when nobody was there to help me. No school. No teacher. Just hunger, phone, data & God. Now I build <b>WhatsApp Bots, Telegram Bots, Discord Bots, Websites & AI Tools</b> that rule the world.</p>
     <div class="hero-btns">
@@ -128,12 +147,12 @@
     <div class="filter-btns"><button onclick="filterProjects('all')" class="filter-active">All</button><button onclick="filterProjects('bot')">Bots</button><button onclick="filterProjects('web')">Websites</button><button onclick="filterProjects('ai')">AI</button></div>
     <input id="searchProject" placeholder="🔍 Search projects... e.g WhatsApp" oninput="searchProjects(this.value)" class="search-box">
     <div class="projects-grid" id="projectsGrid">
-      <div class="project" data-cat="bot ai"><div class="proj-icon">💬</div><h3>Faceless WhatsApp AI Bot</h3><p>Smart AI bot that replies, manages groups, and sends media automatically. Anti-link, anti-spam, welcome.</p><span class="tag">WhatsApp • AI • 🔥 BEST SELLER</span><br><a href="https://wa.me/2348071569914?text=I%20want%20WhatsApp%20Bot" class="btn-small">Get This Bot →</a></div>
-      <div class="project" data-cat="bot"><div class="proj-icon">✈️</div><h3>Telegram Utility Bot</h3><p>Fast bot for downloads, AI chat, and group tools.</p><span class="tag">Telegram • Automation</span><br><a href="https://wa.me/2348071569914?text=I%20want%20Telegram%20Bot" class="btn-small">Get This Bot →</a></div>
-      <div class="project" data-cat="web"><div class="proj-icon">🌐</div><h3>Portfolio Website</h3><p>This website. Modern, fast, hacker loading screen + video background + live logs.</p><span class="tag">Website • HTML/CSS/JS</span><br><a href="https://wa.me/2348071569914?text=I%20want%20a%20Website" class="btn-small">Get Website →</a></div>
-      <div class="project" data-cat="ai"><div class="proj-icon">🤖</div><h3>AI Assistant Bot</h3><p>AI bot that answers questions, writes, and helps users daily. Like ChatGPT inside WhatsApp.</p><span class="tag">AI • Chatbot</span><br><a href="https://wa.me/2348071569914?text=I%20want%20AI%20Bot" class="btn-small">Get This Bot →</a></div>
-      <div class="project" data-cat="bot"><div class="proj-icon">🎮</div><h3>Discord Community Bot</h3><p>Moderation, welcome, levels, and fun commands for servers.</p><span class="tag">Discord • Community</span><br><a href="https://wa.me/2348071569914?text=I%20want%20Discord%20Bot" class="btn-small">Get This Bot →</a></div>
-      <div class="project" data-cat="ai"><div class="proj-icon">🛡️</div><h3>Security Checker Tool</h3><p>Tool to test and protect websites and accounts ethically. Legal only.</p><span class="tag">Cybersecurity</span><br><a href="https://wa.me/2348071569914?text=I%20want%20Security%20Check" class="btn-small">Check Now →</a></div>
+      <div class="project" data-cat="bot ai"><div class="proj-icon">💬</div><h3>Faceless WhatsApp AI Bot</h3><p>Smart AI bot that replies, manages groups, and sends media automatically. Anti-link, anti-spam, welcome.</p><span class="tag">WhatsApp • AI • 🔥 BEST SELLER</span><br><a href="https://wa.me/2348071569915?text=I%20want%20WhatsApp%20Bot" class="btn-small">Get This Bot →</a></div>
+      <div class="project" data-cat="bot"><div class="proj-icon">✈️</div><h3>Telegram Utility Bot</h3><p>Fast bot for downloads, AI chat, and group tools.</p><span class="tag">Telegram • Automation</span><br><a href="https://wa.me/2348071569915?text=I%20want%20Telegram%20Bot" class="btn-small">Get This Bot →</a></div>
+      <div class="project" data-cat="web"><div class="proj-icon">🌐</div><h3>Portfolio Website</h3><p>This website. Modern, fast, hacker loading screen + video background + live logs.</p><span class="tag">Website • HTML/CSS/JS</span><br><a href="https://wa.me/2348071569915?text=I%20want%20a%20Website" class="btn-small">Get Website →</a></div>
+      <div class="project" data-cat="ai"><div class="proj-icon">🤖</div><h3>AI Assistant Bot</h3><p>AI bot that answers questions, writes, and helps users daily. Like ChatGPT inside WhatsApp.</p><span class="tag">AI • Chatbot</span><br><a href="https://wa.me/2348071569915?text=I%20want%20AI%20Bot" class="btn-small">Get This Bot →</a></div>
+      <div class="project" data-cat="bot"><div class="proj-icon">🎮</div><h3>Discord Community Bot</h3><p>Moderation, welcome, levels, and fun commands for servers.</p><span class="tag">Discord • Community</span><br><a href="https://wa.me/2348071569915?text=I%20want%20Discord%20Bot" class="btn-small">Get This Bot →</a></div>
+      <div class="project" data-cat="ai"><div class="proj-icon">🛡️</div><h3>Security Checker Tool</h3><p>Tool to test and protect websites and accounts ethically. Legal only.</p><span class="tag">Cybersecurity</span><br><a href="https://wa.me/2348071569915?text=I%20want%20Security%20Check" class="btn-small">Check Now →</a></div>
     </div>
   </section>
 
@@ -141,9 +160,9 @@
   <section id="services" class="reveal">
     <h2>My <span>Services</span></h2><p class="section-sub">Cheap price. Fast delivery. Quality work. Pay 50% first, 50% after.</p>
     <div class="services-grid">
-      <div class="service"><h3>STARTER BOT</h3><p>Simple WhatsApp / Telegram Bot</p><p class="price">₦5,000+</p><ul><li>✅ Auto Reply</li><li>✅ 5 Commands</li><li>✅ Fast Delivery - 1 Day</li><li>✅ Free Setup Help</li></ul><a href="https://wa.me/2348071569914?text=Hi%20Faceless%20Tech,%20I%20want%20Starter%20Bot" class="btn-small">Order Now</a></div>
-      <div class="service featured"><div class="pop">MOST POPULAR 🔥</div><h3>PRO AI BOT</h3><p>Full AI Bot + Website</p><p class="price">₦15,000+</p><ul><li>✅ AI Chat - Like ChatGPT</li><li>✅ Unlimited Commands</li><li>✅ Group Management</li><li>✅ Free Website</li><li>✅ 1 Month Support</li></ul><a href="https://wa.me/2348071569914?text=Hi%20Faceless%20Tech,%20I%20want%20Pro%20AI%20Bot" class="btn-small">Order Now</a></div>
-      <div class="service"><h3>WEBSITE</h3><p>Portfolio / Business Website</p><p class="price">₦10,000+</p><ul><li>✅ Modern Design</li><li>✅ Mobile Friendly</li><li>✅ Loading Screen + Video</li><li>✅ Contact Form</li></ul><a href="https://wa.me/2348071569914?text=Hi%20Faceless%20Tech,%20I%20want%20a%20Website" class="btn-small">Order Now</a></div>
+      <div class="service"><h3>STARTER BOT</h3><p>Simple WhatsApp / Telegram Bot</p><p class="price">₦5,000+</p><ul><li>✅ Auto Reply</li><li>✅ 5 Commands</li><li>✅ Fast Delivery - 1 Day</li><li>✅ Free Setup Help</li></ul><a href="https://wa.me/2348071569915?text=Hi%20Faceless%20Tech,%20I%20want%20Starter%20Bot" class="btn-small">Order Now</a></div>
+      <div class="service featured"><div class="pop">MOST POPULAR 🔥</div><h3>PRO AI BOT</h3><p>Full AI Bot + Website</p><p class="price">₦15,000+</p><ul><li>✅ AI Chat - Like ChatGPT</li><li>✅ Unlimited Commands</li><li>✅ Group Management</li><li>✅ Free Website</li><li>✅ 1 Month Support</li></ul><a href="https://wa.me/2348071569915?text=Hi%20Faceless%20Tech,%20I%20want%20Pro%20AI%20Bot" class="btn-small">Order Now</a></div>
+      <div class="service"><h3>WEBSITE</h3><p>Portfolio / Business Website</p><p class="price">₦10,000+</p><ul><li>✅ Modern Design</li><li>✅ Mobile Friendly</li><li>✅ Loading Screen + Video</li><li>✅ Contact Form</li></ul><a href="https://wa.me/2348071569915?text=Hi%20Faceless%20Tech,%20I%20want%20a%20Website" class="btn-small">Order Now</a></div>
     </div>
   </section>
 
@@ -194,9 +213,9 @@
   <section id="blog" class="reveal">
     <h2>Tech <span>Blog</span></h2><p class="section-sub">Learn from me. I share what I know.</p>
     <div class="projects-grid">
-      <div class="project"><div class="proj-icon">📚</div><h3>How I Learned Coding From AI</h3><p>No teacher. No school. Just AI and hunger. This is my story...</p><span class="tag">My Story • 5 min read</span><br><a href="https://wa.me/2348071569914?text=Teach%20me%20coding" class="btn-small">Read More →</a></div>
-      <div class="project"><div class="proj-icon">🤖</div><h3>Why Every Business Needs A Bot in 2026</h3><p>Bots reply 24/7. You sleep, your bot works. Here is why...</p><span class="tag">AI • Business • 3 min read</span><br><a href="https://wa.me/2348071569914?text=I%20want%20a%20bot%20for%20my%20business" class="btn-small">Read More →</a></div>
-      <div class="project"><div class="proj-icon">🛡️</div><h3>5 Ways To Protect Your WhatsApp</h3><p>Hackers are everywhere. Protect yourself with these 5 simple tips...</p><span class="tag">Security • 4 min read</span><br><a href="https://wa.me/2348071569914?text=How%20to%20protect%20my%20WhatsApp" class="btn-small">Read More →</a></div>
+      <div class="project"><div class="proj-icon">📚</div><h3>How I Learned Coding From AI</h3><p>No teacher. No school. Just AI and hunger. This is my story...</p><span class="tag">My Story • 5 min read</span><br><a href="https://wa.me/2348071569915?text=Teach%20me%20coding" class="btn-small">Read More →</a></div>
+      <div class="project"><div class="proj-icon">🤖</div><h3>Why Every Business Needs A Bot in 2026</h3><p>Bots reply 24/7. You sleep, your bot works. Here is why...</p><span class="tag">AI • Business • 3 min read</span><br><a href="https://wa.me/2348071569915?text=I%20want%20a%20bot%20for%20my%20business" class="btn-small">Read More →</a></div>
+      <div class="project"><div class="proj-icon">🛡️</div><h3>5 Ways To Protect Your WhatsApp</h3><p>Hackers are everywhere. Protect yourself with these 5 simple tips...</p><span class="tag">Security • 4 min read</span><br><a href="https://wa.me/2348071569915?text=How%20to%20protect%20my%20WhatsApp" class="btn-small">Read More →</a></div>
     </div>
   </section>
 
@@ -209,6 +228,7 @@
       <div class="t-item"><b>NEXT - 2027</b><p>I am coding something that will change my life. My dream is Hacker Tech Inc. Biggest in Africa.</p></div>
     </div>
   </section>
+
 
   <!-- FAQ -->
   <section id="faq" class="reveal">
@@ -223,47 +243,59 @@
     </div>
   </section>
 
- <!-- AI CHAT -->
+  <!-- AI CHAT -->
   <section id="ai-chat" class="reveal">
     <h2>Chat With <span>My AI</span></h2><p class="section-sub">Ask my AI anything. It replies instantly.</p>
     <div class="vision-box">
-      <div id="chatBox" style="text-align:left;background:#000;padding:12px;border-radius:10px;min-height:100px;"><p><b>🤖 Faceless AI:</b> Hi! I'm Faceless AI. Ask me about bots, prices, or Simon. Type below 👇</p></div><br>
-      <input id="aiInput" placeholder="Ask e.g How much is a bot?" class="calc-select" onkeydown="if(event.key==='Enter')sendAI()"><br><br>
-      <button onclick="sendAI()" class="btn-small">Send →</button>
+      <div id="chatBox" style="text-align:left;background:#000;padding:14px;border-radius:10px;min-height:120px;max-height:300px;overflow-y:auto;">
+        <p><b style="color:#00ff88;">🤖 Faceless AI:</b> Hello! I'm Faceless Tech AI. Ask me about bots, websites, prices or how to start. Type below 👇</p>
+      </div>
+      <br>
+      <input id="aiInput" placeholder="Ask me anything... e.g How much is WhatsApp bot?" style="width:100%;max-width:600px;padding:14px;border-radius:12px;border:1px solid #1e2a4a;background:#0d1326;color:#fff;outline:none;" onkeydown="if(event.key==='Enter'){sendAiMsg()}">
+      <br><br>
+      <button onclick="sendAiMsg()" class="btn-small">Send →</button>
     </div>
   </section>
 
+  <!-- VISION -->
   <section id="vision" class="reveal">
-    <h2>My <span>Vision</span></h2>
-    <div class="vision-box"><h3>MY BIGGEST DREAM</h3><p>To join <b>Hacker Tech Inc</b> and become one of the best developers in the world. To build a company from Warri that the whole world will know.</p><p class="tech-rules">TECH RULES ⚡</p><p>To be known for who I am - not for rumours, but for my work.</p><a href="https://wa.me/2348071569914?text=I%20want%20to%20work%20with%20you" class="btn-small">Work With Me →</a></div>
+    <div class="vision-box">
+      <h3>MY VISION</h3>
+      <p class="tech-rules">TECH RULES ⚡</p>
+      <p>From Warri to the World. I started from zero with only a phone, data and God. Now I build tools that help businesses grow, help people learn, and prove that a boy from Warri can rule the tech world. My dream is Hacker Tech Inc - the biggest tech company from Africa.</p>
+      <p><b style="color:#00ff88;">"I started from zero, but I will not end at zero."</b></p>
+    </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="reveal">
-    <h2>Contact <span>Me</span></h2><p class="section-sub">Message me on any platform. I reply fast - usually in 5 minutes.</p>
+    <h2>Contact <span>Me</span></h2><p class="section-sub">Let's build something great together. I'm online now.</p>
     <div class="contact-grid">
-      <a href="https://wa.me/2348071569915" target="_blank" class="contact-card">💬 <b>WhatsApp</b><span>Chat Now - Fastest</span></a>
-      <a href="mailto:officialsimondon@gmail.com" class="contact-card">📧 <b>Gmail</b><span>officialsimondon@gmail.com</span></a>
-      <a href="https://instagram.com/404errorr2026" target="_blank" class="contact-card">📸 <b>Instagram</b><span>@404errorr2026</span></a>
-      <a href="https://github.com/Simontechempire" target="_blank" class="contact-card">💻 <b>GitHub</b><span>Simontechempire</span></a>
-      <a href="https://t.me/error404_is_not_found" target="_blank" class="contact-card">✈️ <b>Telegram</b><span>@error404_is_not_found</span></a>
-      <a href="https://www.tiktok.com/@realsimondon" target="_blank" class="contact-card">🎵 <b>TikTok</b><span>@realsimondon</span></a>
+      <a href="https://wa.me/2348071569915" class="contact-card"><b>💬 WhatsApp</b><span>Chat me now - Fastest reply</span><span>+234 807 156 9915</span></a>
+      <a href="tel:+2348071569915" class="contact-card"><b>📞 Call Me</b><span>Tap to call</span><span>+234 807 156 9915</span></a>
+      <a href="https://wa.me/2348071569915?text=Hi%20Faceless%20Tech,%20I%20want%20to%20order" class="contact-card"><b>🛒 Order Now</b><span>Start your project today</span><span>50% first, 50% after</span></a>
+      <a href="#ai-chat" class="contact-card"><b>🤖 AI Chat</b><span>Ask my AI anything</span><span>Online 24/7</span></a>
     </div>
-    <form class="contact-form" onsubmit="sendMsg(event)">
-      <input id="nameInput" placeholder="Your Name" required>
-      <select id="serviceInput" class="calc-select"><option> I want a WhatsApp Bot</option><option> I want a Telegram Bot</option><option> I want a Website</option><option> I want to Learn Coding</option><option> Other</option></select>
-      <input id="msgInput" placeholder="Your Message" required>
+    <form class="contact-form" onsubmit="sendContact(event)">
+      <input id="cName" placeholder="Your Name" required>
+      <input id="cMsg" placeholder="What do you want? e.g I want WhatsApp Bot" required>
+      <select id="cType"><option>WhatsApp Bot</option><option>Telegram Bot</option><option>Discord Bot</option><option>Website</option><option>AI Tool</option><option>Learn Coding</option></select>
       <button type="submit">Send To WhatsApp →</button>
     </form>
-    <div class="vision-box" style="margin-top:20px;"><h3>📧 Join My Newsletter</h3><p>Get free tech tips every week.</p><input id="newsInput" placeholder="Your WhatsApp Number or Email" class="calc-select"><br><br><button onclick="alert('Thanks! You joined Faceless Tech Newsletter! I will message you soon.')" class="btn-small">Join Now →</button></div>
   </section>
 
-  <footer><p>© 2026 FACELESS TECH • Built by Simon • Tech Rules ⚡</p><p>Designed with passion in Nigeria 🇳🇬 • Warri, Delta State • <span id="footerTime"></span></p><p>Follow: <a href="https://instagram.com/404errorr2026" style="color:#00ff88;">Instagram</a> • <a href="https://github.com/Simontechempire" style="color:#00ff88;">GitHub</a> • <a href="https://t.me/error404_is_not_found" style="color:#00ff88;">Telegram</a></p></footer>
+  <footer>
+    <p><b style="color:#00ff88;">FACELESS TECH ⚡ TECH RULES</b></p>
+    <p>Built with ❤️ by Simon - Warri, Delta State, Nigeria 🇳🇬</p>
+    <p>© 2026 Faceless Tech. All Rights Reserved.</p>
+    <p><a href="https://wa.me/2348071569915" style="color:#00ff88;">WhatsApp: +234 807 156 9915</a> • <a href="#top" style="color:#00bfff;">Back To Top ↑</a></p>
+    <p style="font-size:11px;color:#666;">I started from zero. AI was my teacher. Now I build bots that rule the world.</p>
+  </footer>
 </div>
 
-<!-- FLOATING BUTTONS -->
-<a href="https://wa.me/2348071569914" target="_blank" class="wa-float" title="Chat on WhatsApp">💬</a>
+<a href="https://wa.me/2348071569915" class="wa-float" target="_blank">💬</a>
 <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<button id="aiFloat" onclick="document.getElementById('ai-chat').scrollIntoView({behavior:'smooth'})" title="Chat with AI">🤖</button>
+<button id="aiFloat" onclick="document.getElementById('ai-chat').scrollIntoView({behavior:'smooth'})">🤖</button>
 
 <script src="script.js"></script>
 </body>
